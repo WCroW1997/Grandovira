@@ -126,4 +126,4 @@ async def main():
     setup_application(app, dp, on_startup, on_shutdown)
     return app
 
-app = asyncio.run(main())
+app = asyncio.get_event_loop().run_until_complete(create_app())
